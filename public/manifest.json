@@ -1,13 +1,13 @@
 {
-  "name": "Reciclado - Capacitación",
+  "name": "TREDI ARG - Reciclado en Casa",
   "short_name": "Reciclado",
   "description": "Presentación interactiva sobre reciclado de residuos en casa por TREDI ARGENTINA.",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#1E4477",
   "theme_color": "#e07026",
-  "orientation": "landscape",
-  "scope": ".",
+  "lang": "es",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "/logo.png",
