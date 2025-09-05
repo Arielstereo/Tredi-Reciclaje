@@ -1,46 +1,84 @@
-# Astro Starter Kit: Basics
+<p align="center">
+  <img src="public/logo.png" alt="Logo TREDI ARGENTINA" width="360" />
+</p>
 
-```sh
-npm create astro@latest -- --template basics
+# Reciclado - Capacitación
+
+Presentación interactiva sobre reciclado de residuos en casa, desarrollada con [Astro](https://astro.build/) y [React](https://react.dev/).  
+Incluye navegación por diapositivas, pantalla de inicio y despedida, y está preparada como PWA para instalarse como app de escritorio.
+
+---
+
+## Características
+
+- Presentación educativa sobre reciclado doméstico.
+- Navegación por diapositivas con botones y teclado.
+- Pantalla de bienvenida y pantalla final de despedida.
+- Adaptada para pantallas grandes (TV, proyectores).
+- Instalación como PWA (Progressive Web App).
+- Funciona offline (con service worker y caché).
+- Estilos modernos con [Tailwind CSS](https://tailwindcss.com/).
+
+---
+
+## Instalación y uso
+
+1. **Instala dependencias:**
+
+   ```bash
+   npm install
+   ```
+
+2. **Ejecuta en modo desarrollo:**
+
+   ```bash
+   npm run dev
+   ```
+
+3. **Compila para producción:**
+
+   ```bash
+   npm run build
+   ```
+
+4. **Previsualiza el build:**
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## PWA (App de escritorio)
+
+- El proyecto incluye un `manifest.json` y un `sw.js` (service worker) en la carpeta `public`.
+- Al abrir la app en un navegador compatible (Chrome, Edge, etc.), aparecerá la opción de instalar como aplicación.
+- Funciona offline si el usuario la instala y vuelve a abrirla sin conexión.
+
+---
+
+## Estructura del proyecto
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
+Reciclado/
 ├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+│   ├── manifest.json
+│   ├── sw.js
+│   ├── logo-192.png
+│   ├── logo-512.png
+│   └── ... (imágenes)
+├── src/
+│   ├── components/
+│   │   └── PresentacionReciclado.jsx
+│   └── pages/
+│       └── ... (Astro layouts y páginas)
+├── package.json
+└── tailwind.config.js
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
+## Personalización
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Cambia los textos, imágenes y colores en `src/components/PresentacionReciclado.jsx`.
+- Agrega tus propios íconos en `public/logo-192.png` y `public/logo-512.png`.
+- Modifica el manifest y el service worker según tus necesidades.

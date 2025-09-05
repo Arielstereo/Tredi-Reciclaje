@@ -7,6 +7,12 @@ const PresentacionReciclado = () => {
   const totalSlides = 12;
 
   useEffect(() => {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js");
+    }
+  }, []);
+
+  useEffect(() => {
     if (showSplash) return; // No escuchar teclas durante el splash
     const handleKeyDown = (e) => {
       if (e.key === "ArrowRight" || e.key === " ") {
