@@ -12,6 +12,13 @@ import "@fontsource-variable/outfit";
     <link rel="manifest" href="/manifest.json" />
     <meta name="generator" content={Astro.generator} />
     <title>Reciclado en Casa | TREDI ARG</title>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js");
+        });
+      }
+    </script>
   </head>
   <body>
     <slot />
